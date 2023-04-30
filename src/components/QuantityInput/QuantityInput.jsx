@@ -1,34 +1,21 @@
 import PropTypes from "prop-types";
-import { useContext } from "react";
-import { ProductContext } from "../../App";
+import { useState } from "react";
 
-const QuantityInput = ({ product }) => {
-  const { checkout, setCheckout } = useContext(ProductContext);
-    let newCheckout = [...checkout]
-  //   let [input, setInput] = useState(1);
-  //   let products = [];
-    const restProducts = newCheckout.filter((item) => item._id !== product._id);
+const QuantityInput = ({product, handleRemove}) => {
+    let [input, setInput] = useState(product.quantity);
 
     const handleDecrese = (product) =>{
-      //const selectedProduct = newCheckout.find((item) => item._id == product._id);
+      if(product.quantity < 2){
+        handleRemove();
+      }
       product.quantity = product.quantity - 1;
-      setCheckout(restProducts, product);
+      setInput(input-1)
     };
 
     const handleIncrese = (product) =>{
-      //const selectedProduct = newCheckout.find((item) => item._id == product._id);
       product.quantity = product.quantity + 1;
-      setCheckout(restProducts, product);
+      setInput(input+1)
     };
-
-  // selectedProduct.quantity = parseInt(input);
-  // if(selectedProduct.quantity !== product.quantity){
-  //   products = [...restProducts, selectedProduct];
-  //   setCheckOut(products);
-  // }
-  // // console.log(products);
-  //console.log(selectedProduct);
-   //console.log(product);
   return (
     <div>
       <label htmlFor="Quantity" className="sr-only">
@@ -40,22 +27,22 @@ const QuantityInput = ({ product }) => {
         <button
           onClick={() => handleDecrese(product)}
           type="button"
-          className="w-6 h-6 text-gray-600 transition hover:opacity-75"
+          className="w-7 h-8 text-gray-600 transition font-semibold dark:text-slate-200 hover:opacity-75"
         >
           &minus;
         </button>
 
         <input
-          defaultValue={product.quantity}
+          value={product.quantity}
           type="number"
           id="Quantity"
-          className="h-6 w-6 border-transparent text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
+          className="h-8 w-6 outline-none border-transparent text-center [-moz-appearance:_textfield] text-lg font-semibold sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
         />
 
         <button
           onClick={() => handleIncrese(product)}
           type="button"
-          className="w-6 h-6 text-gray-600 transition hover:opacity-75"
+          className="w-7 h-8 text-gray-600 font-semibold dark:text-slate-200 transition hover:opacity-75"
         >
           &#43;
         </button>
@@ -66,6 +53,7 @@ const QuantityInput = ({ product }) => {
 
 QuantityInput.propTypes = {
   product: PropTypes.object,
+  handleRemove: PropTypes.func
 };
 
 export default QuantityInput;

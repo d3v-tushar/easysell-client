@@ -5,6 +5,7 @@ import Pos from "../../pages/POS/POS";
 import AddProduct from "../../pages/AddProduct/AddProduct";
 import Login from "../../pages/Login/Login";
 import PaymentCheckout from "../../pages/PaymentCheckout/PaymentCheckout";
+import Inventory from "../../pages/Inventory/Inventory";
 
 export const routes = createBrowserRouter([
     {
@@ -20,11 +21,15 @@ export const routes = createBrowserRouter([
                 element: <Pos/>
             },
             {
+                path: '/inventory',
+                element: <Inventory/>
+            },
+            {
                 path: '/add-product',
                 element: <AddProduct/>
             },
             {
-                path: '/checkout',
+                path: '/pos/checkout',
                 element: <PaymentCheckout/>
             },
             

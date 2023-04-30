@@ -37,7 +37,7 @@ function App() {
   const [open, setOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [checkout, setCheckout] = useState([]);
-  const [pageHeader, setPageHeader] = useState("EasySell");
+  let [openModal, setOpenModal] = useState(false);
 
   useEffect(() =>{
     setDarkMode(JSON.parse(localStorage.getItem('dark')))
@@ -60,7 +60,7 @@ function App() {
 
   const clonedProducts = [...products];
   const [searchQuery, setSearchQuery] = useState("");
-  console.log(searchQuery);
+  // console.log(searchQuery);
   // console.log(selected);
 
   const filteredProducts =
@@ -76,10 +76,10 @@ function App() {
   const contextData = {
     open,
     setOpen,
+    openModal, 
+    setOpenModal,
     darkMode,
     setDarkMode,
-    pageHeader,
-    setPageHeader,
     cartOpen,
     setCartOpen,
     products,

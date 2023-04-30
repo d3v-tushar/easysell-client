@@ -9,7 +9,7 @@ const Sidebar = () => {
       <div className="sidebar z-50 hidden lg:block bg-white dark:bg-gray-800 border-r dark:border-none dark:text-white absolute left-0 group min-h-screen w-[5vw] overflow-hidden hover:w-[15vw] transition-all duration-300 hover:shadow-lg">
         <div className="flex h-screen flex-col justify-between pt-2 pb-6">
           <div>
-            <div className="w-max p-2.5">
+            <div className="w-max flex flex-col justify-center p-2.5">
               <img
                 src="https://tailus.io/images/logo.svg"
                 className="w-[13vw]"
@@ -24,7 +24,7 @@ const Sidebar = () => {
                   className={({isActive}) => (isActive ? activeCSS : linkCSS)}
                 >
                   <svg
-                    className="-ml-1 h-[5vh] w-[3vw]"
+                    className="-ml-1 scale-125 h-[5vh] w-[3vw]"
                     viewBox="0 0 24 24"
                     fill="none"
                   >
@@ -66,7 +66,7 @@ const Sidebar = () => {
                       d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z"
                     />
                   </svg>
-                  <span className="-mr-1 hidden group-hover:block font-medium">Categories</span>
+                  <span className="-mr-1 hidden group-hover:block font-medium">POS</span>
                 </NavLink>
               </li>
               <li className="min-w-max">

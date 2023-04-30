@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 import CartItem from "../CartItem/CartItem";
 
 const ProductCart = () => {
-  const total = 100;
+  let total = 0;
   const { cartOpen, setCartOpen, checkout } = useContext(ProductContext);
+  checkout.map(item => total = item.price * item.quantity)
   return (
     <div className="fixed w-full left-0 top-0 z-[999]">
       <div
-        className={`lg:hidden text-gray-900 absolute w-full md:w-6/12 h-screen font-medium bg-gray-100 shadow-xl top-0 duration-500 ${
+        className={`lg:hidden text-gray-900 absolute w-full md:w-6/12 h-screen font-medium bg-gray-100 dark:bg--gray-800 shadow-xl top-0 duration-500 ${
           cartOpen ? "right-0" : "right-[-100%]"
         }`}
       >
@@ -58,12 +59,14 @@ const ProductCart = () => {
               <p>${total}</p>
             </div>
             <div className="mt-6">
+            <button className="w-full" onClick={() => setCartOpen(false)}>
               <Link
-                to="/payment"
+                to="/pos/checkout"
                 className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
               >
                 Checkout
               </Link>
+              </button>
             </div>
           </div>
         </div>
