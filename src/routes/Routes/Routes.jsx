@@ -18,7 +18,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/pos',
-                element: <Pos/>
+                element: <Pos/>,
             },
             {
                 path: '/inventory',

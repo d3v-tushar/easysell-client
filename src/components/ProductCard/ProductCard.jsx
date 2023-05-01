@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
     setCheckout(newCart);
   };
   return (
-    <div className="relative p-4 h-72 min-w-fit rounded-xl group border border-gray-100 dark:border-gray-700 bg-white shadow-md shadow-sky-900/10 dark:bg-gray-800 cursor-default">
+    <div onClick={() => handleCheckOut(product)} className="relative cursor-pointer p-4 h-72 min-w-fit rounded-xl group border border-gray-100 dark:border-gray-700 bg-white shadow-md shadow-sky-900/10 dark:bg-gray-800">
       <div className="relative">
         <img
           src={product.imageSrc}
@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
           className="h-40 mx-auto object-cover rounded-xl"
         />
         <div className="absolute z-[1] w-max h-max right-0">
-          <button onClick={() => handleCheckOut(product)} className="relative mx-auto flex h-10 w-10 items-center before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-t before:from-gray-200 before:to-white dark:before:bg-gray-700 before:border before:border-gray-100 dark:before:border-gray-600  before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
+          <button className="relative mx-auto flex h-10 w-10 items-center before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-t before:from-gray-200 before:to-white dark:before:bg-gray-700 before:border before:border-gray-100 dark:before:border-gray-600  before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="relative h-5 w-5 text-gray-700 dark:text-gray-800 m-auto"

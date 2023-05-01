@@ -13,9 +13,9 @@ const Header = () => {
     localStorage.setItem("dark", !darkMode);
   };
   return (
-    <div className="sticky transition-all duration-200 top-0 w-full z-30 h-[8vh] lg:h-[9vh] border-b bg-white dark:bg-gray-800 dark:border-gray-700 lg:py-2.5">
-      <div className="flex items-center align-middle justify-between space-x-4 px-6">
-        <div className="flex">
+    <div className="sticky transition-all duration-200 top-0 w-full z-30 h-[8vh] lg:h-[9vh] border-b bg-white dark:bg-gray-800 dark:border-gray-700 lg:py-2">
+      <div className="flex items-center align-middle justify-between space-x-4  my-auto px-6">
+        <div className="flex min-h-full">
           <button
             onClick={() => setOpen(!open)}
             className="h-16 w-12 border-r mr-2 lg:hidden dark:border-gray-700 dark:text-gray-300"
@@ -40,7 +40,7 @@ const Header = () => {
           ) : (
             <h5
               hidden
-              className="bg-gradient-to-r from-sky-600 to-cyan-400 bg-clip-text text-transparent text-3xl 2xl:text-5xl font-bold text-gray-800 lg:block"
+              className="bg-gradient-to-r from-sky-600 to-cyan-400 bg-clip-text text-transparent text-xl 2xl:text-4xl font-bold text-gray-800 lg:block"
             >
               EasySell
             </h5>
@@ -113,7 +113,6 @@ const Header = () => {
 Header.propTypes = {
   open: PropTypes.bool,
   setOpen: PropTypes.func,
-  pageHeader: PropTypes.string,
   setCartOpen: PropTypes.func,
 };
 

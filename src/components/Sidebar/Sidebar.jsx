@@ -9,9 +9,9 @@ const Sidebar = () => {
       <div className="sidebar z-50 hidden lg:block bg-white dark:bg-gray-800 border-r dark:border-none dark:text-white absolute left-0 group min-h-screen w-[5vw] overflow-hidden hover:w-[15vw] transition-all duration-300 hover:shadow-lg">
         <div className="flex h-screen flex-col justify-between pt-2 pb-6">
           <div>
-            <div className="w-max flex flex-col justify-center p-2.5">
+            <div className="min-w-max scale-100 flex flex-col justify-center p-2.5">
               <img
-                src="https://tailus.io/images/logo.svg"
+                src="https://i.ibb.co/mNmYcP7/Untitled-design-2-removebg-preview.png"
                 className="w-[13vw]"
                 alt=""
               />
@@ -144,7 +144,7 @@ const Sidebar = () => {
               </li>
             </ul>
           </div>
-          <div className="w-max -mb-3">
+          <div className="min-w-max -mb-3">
             <NavLink
               to="/settings"
               className={({isActive}) => (isActive ? activeCSS : linkCSS)}

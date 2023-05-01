@@ -8,12 +8,12 @@ const QuantityInput = ({product, handleRemove}) => {
       if(product.quantity < 2){
         handleRemove();
       }
-      product.quantity = product.quantity - 1;
+      product.quantity = input - 1;
       setInput(input-1)
     };
 
     const handleIncrese = (product) =>{
-      product.quantity = product.quantity + 1;
+      product.quantity = input + 1;
       setInput(input+1)
     };
   return (
@@ -33,7 +33,9 @@ const QuantityInput = ({product, handleRemove}) => {
         </button>
 
         <input
-          value={product.quantity}
+          value={input}
+          // onChange={(e) => setInput(e.target.value)}
+          readOnly
           type="number"
           id="Quantity"
           className="h-8 w-6 outline-none border-transparent text-center [-moz-appearance:_textfield] text-lg font-semibold sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
