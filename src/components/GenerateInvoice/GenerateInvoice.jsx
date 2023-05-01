@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
-import { useContext } from "react";
-import { ProductContext } from "../../App";
-const GenerateInvoice = () => {
-  const { order } = useContext(ProductContext);
-  const { name, phone, checkout } = order;
-  console.log(order);
+// import { useContext } from "react";
+// import { ProductContext } from "../../App";
+const GenerateInvoice = ({ name, phone, checkout, placedTime }) => {
+  // const { order } = useContext(ProductContext);
+  // const { name, phone, checkout } = order;
+  // console.log(order);
   
   // let products = [];
   // if(invoiceProducts){
   //   products = invoiceProducts.map(item => item.description = item.name)
   // } 
-  // console.log(products);
+  console.log({ name, phone, checkout, placedTime });
 
   let invoiceData = {
     // Customize enables you to provide your own templates
@@ -24,7 +24,7 @@ const GenerateInvoice = () => {
       // The invoice background
       background: "https://i.ibb.co/ngXDn2g/Untitled-design-1.png",
     },
-    // Your own data
+    // Your own dataf
     sender: {
       company: "#AngurFolTok",
       address: "Dhaka, Bangladesh",
@@ -50,9 +50,10 @@ const GenerateInvoice = () => {
       // Invoice number
       number: "2021.0001",
       // Invoice data
-      date: "12-12-2021",
+      date: placedTime,
+    
       // Invoice due date
-      "due-date": "Cash Paid"
+      
     },
     // The products you would like to see on your invoice
     // Total values are being calculated automatically

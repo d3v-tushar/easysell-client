@@ -6,6 +6,7 @@ import animation02 from "../../assets/animation02.json";
 import CheckoutItem from "../../components/CheckoutItem/CheckoutItem";
 import easyinvoice from "easyinvoice";
 import GenerateInvoice from "../../components/GenerateInvoice/GenerateInvoice";
+import moment from "moment/moment";
 const PaymentCheckout = () => {
   const { checkout, setOrder } = useContext(ProductContext);
   let subTotal = 0;
@@ -15,6 +16,8 @@ const PaymentCheckout = () => {
   const [phone, setPhone] = useState("");
   const [paymentRoute, setPaymentRoute] = useState(false);
 
+  let placedTime = moment().format("DD/MM/YYYY, h:mm a");
+
   const handleSubmit = (e) => {
     const paymentOption = e.target.value;
     if (paymentOption === "cash") {
@@ -23,22 +26,22 @@ const PaymentCheckout = () => {
     }
   };
 
-  let invoiceData = GenerateInvoice();
+  let invoiceData = GenerateInvoice({ name, phone, checkout, placedTime });
 
   const downloadInvoice = async () => {
     const result = await easyinvoice.createInvoice(invoiceData);
     easyinvoice.download("myInvoice.pdf", result.pdf);
   };
 
-   const handlePayNow = async() =>{
+  const handlePayNow = async () => {
     setOrder({ name, phone, checkout });
     downloadInvoice();
-   };
+  };
 
   //console.log(invoiceData);
   //console.log(subTotal);
   //let total = subTotal + subTotal * 0.05;
-  //let placedTime = moment().format('DD/MM/YY, h:mm:ss a');
+
   //console.log(placedTime);
 
   return (
@@ -60,7 +63,7 @@ const PaymentCheckout = () => {
                   Download
                 </button>
               </h2>
-              <Lottie style={{height: 500}} animationData={animation02} />
+              <Lottie style={{ height: 500 }} animationData={animation02} />
             </>
           ) : null}
           <ul className="max-w-[30rem] p-5">
