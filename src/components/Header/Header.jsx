@@ -13,7 +13,7 @@ const Header = () => {
     localStorage.setItem("dark", !darkMode);
   };
   return (
-    <div className="sticky transition-all duration-200 top-0 w-full z-30 h-[8vh] lg:h-[9vh] border-b bg-white dark:bg-gray-800 dark:border-gray-700 lg:py-2">
+    <div className="sticky transition-all grid duration-200 top-0 w-full z-30 h-[8vh] lg:h-[9vh] border-b bg-white dark:bg-gray-800 dark:border-gray-700 lg:py-2">
       <div className="flex items-center align-middle justify-between space-x-4  my-auto px-6">
         <div className="flex min-h-full">
           <button

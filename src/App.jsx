@@ -22,6 +22,34 @@ const products = [
   },
   {
     _id: 2,
+    name: "Apple iPhone 14 Pro Max",
+    href: "#",
+    color: "Blue",
+    price: 100,
+    quantity: 1,
+    description: "Medium Stuff Satchel",
+    "tax-rate": 1,
+    imageSrc:
+      "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg",
+    imageAlt:
+      "Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.",
+  },
+  {
+    _id: 3,
+    name: "NewLook UK Throwback Hip Bag 2023 Edition",
+    href: "#",
+    category: "Bag",
+    price: 50,
+    quantity: 1,
+    description: "Purse Sholder Bag",
+    "tax-rate": 3,
+    imageSrc:
+      "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg",
+    imageAlt:
+      "Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.",
+  },
+  {
+    _id: 4,
     name: "Medium Stuff Satchel",
     href: "#",
     color: "Blue",

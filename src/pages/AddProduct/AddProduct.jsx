@@ -9,7 +9,7 @@ const AddProduct = () => {
                   htmlFor="name"
                   className="block text-sm font-medium leading-6   text-gray-600"
                 >
-                  Name
+                 Product Name
                 </label>
                 <input
                   type="name"
@@ -38,225 +38,13 @@ const AddProduct = () => {
                   <option>Mexico</option>
                 </select>
               </div>
-
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Barcode Symbology :
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className=" mb-5">
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Product Price:
-                </label>
-                <input
-                  type="number"
-                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  placeholder="Enter Product Price"
-                />
-              </div>
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Sale Unit :
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className=" mb-5">
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Stock Alert:
-                </label>
-                <input
-                  type="number"
-                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  placeholder="Enter Product Price"
-                />
-              </div>
-
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Tax Type :
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div className="">
-              <div className="  mb-5">
-                <label
-                  htmlFor="code"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Code
-                </label>
-                <input
-                  type="name"
-                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  placeholder="Enter Code"
-                />
-              </div>
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Brand :
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-              <div className=" mb-5">
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Product Cost:
-                </label>
-                <input
-                  type="number"
-                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  placeholder="Enter Product Price"
-                />
-              </div>
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Product Unit :
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Purchase Unit :
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-              <div className=" mb-5">
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Order Tax:
-                </label>
-                <input
-                  type="number"
-                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  placeholder="Enter Product Price"
-                />
-              </div>
-              <div className=" mb-5">
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Quantity Limitation:
-                </label>
-                <input
-                  type="number"
-                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  placeholder="Enter Product Price"
-                />
-              </div>
-            </div>
-
-            <div className="">
+              
+              <div>
               <label
-                htmlFor="cover-photo"
+                htmlFor="product-photo"
                 className="block text-sm font-medium leading-6   text-gray-600"
               >
-                Multiple Image:
+                Product Image:
               </label>
               <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                 <div className="text-center">
@@ -292,61 +80,25 @@ const AddProduct = () => {
                   </p>
                 </div>
               </div>
-              <div className="text-center mt-5 mb-3 ">
-                <h2 className="text-4xl font-bold leading-7   text-gray-600">
-                  Add Stock
-                </h2>
-              </div>
+            </div>
+            <div className="w-full flex gap-4 mt-6 ">
+            <button className="mb-1 px-6 py-3 w-full text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-500 rounded-lg hover:bg-gray-400 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-50">
+              cancle
+            </button>
+            <button className="mb-1 px-6 py-3 w-full text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-indigo-500 rounded-lg hover:bg-indigo-400 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-50">
+              Save
+            </button>
+          </div>
+             
+            </div>
 
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Warehouse
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-              <div className="  items-center mb-5">
-                <label
-                  htmlFor="product-catagory"
-                  className="block text-sm font-medium leading-6   text-gray-600"
-                >
-                  Supplier :
-                </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className=" mb-5">
+            <div>
+            <div className=" mb-5">
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium leading-6   text-gray-600"
                 >
-                  Add Product Quantity:
+                  Product Price:
                 </label>
                 <input
                   type="number"
@@ -354,37 +106,52 @@ const AddProduct = () => {
                   placeholder="Enter Product Price"
                 />
               </div>
-
-              <div className="  items-center mb-5">
+  
+              <div className=" mb-5">
                 <label
-                  htmlFor="product-catagory"
+                  htmlFor="name"
                   className="block text-sm font-medium leading-6   text-gray-600"
                 >
-                  Status :
+                  Product Cost:
                 </label>
-                <div placeholder="Enter Code">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  >
-                    <option></option>
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
+                <input
+                  type="number"
+                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  placeholder="Enter Product Price"
+                />
               </div>
-            </div>
-          </div>
-          <div className="lg:w-2/3 grid grid-cols-2 sm:w-full">
-            <div className="col-span-full">
+              <div className=" mb-5">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium leading-6   text-gray-600"
+                >
+                  Order Tax:
+                </label>
+                <input
+                  type="number"
+                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  placeholder="Enter Product Price"
+                />
+              </div>
+              <div className=" mb-5">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium leading-6   text-gray-600"
+                >
+                  Product Quantity:
+                </label>
+                <input
+                  type="number"
+                  className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 border-slate-200 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-400 dark:focus:border-indigo-300 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  placeholder="Enter Product Price"
+                />
+              </div>
+              <div className="col-span-full">
               <label
                 htmlFor="about"
                 className="block text-sm font-medium leading-6   text-gray-600"
               >
-                Notes
+                Product Discription
               </label>
               <div className="mt-2">
                 <textarea
@@ -396,15 +163,21 @@ const AddProduct = () => {
                 ></textarea>
               </div>
             </div>
+            </div>
+
+            {/*  */}
           </div>
-          <div className="w-full grid lg:grid-cols-10 md:lg:grid-cols-10 sm:lg:grid-cols-10 gap-x-4 items-end mt-6 ">
+          <div className="lg:w-2/3 grid grid-cols-2 sm:w-full">
+            
+          </div>
+          {/* <div className="w-full grid lg:grid-cols-10 md:lg:grid-cols-10 sm:lg:grid-cols-10 gap-x-4 items-end mt-6 ">
             <button className="mb-1 px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-500 rounded-lg hover:bg-gray-400 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-50">
               cancle
             </button>
             <button className="mb-1 px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-indigo-500 rounded-lg hover:bg-indigo-400 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-50">
               Save
             </button>
-          </div>
+          </div> */}
         </form>
      
   );
