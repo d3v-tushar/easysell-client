@@ -1,3 +1,8 @@
+import AreaChart from "../../components/AreaChart/AreaChart";
+import PieChart from "../../components/PieChart/PieChart";
+import RadialbarChart from "../../components/RadialbarChart/RadialbarChart";
+import SparkLines from "../../components/SparkLines/SparkLines";
+
 const Dashboard = () => {
     //const {setPageHeader} = useContext(ProductContext);
     //setPageHeader('Dashboard');
@@ -6,8 +11,8 @@ const Dashboard = () => {
         <div className="w-full">
           
       
-          <div className="px-6 dark:bg-gray-900 lg:h-[91vh] h-full w-full py-6">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="p-6 flex flex-col justify-between dark:bg-gray-900 lg:h-[91vh] h-full w-full py-6">
+            {/* <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <div className="md:col-span-2 lg:col-span-1">
                 <div className="h-full space-y-6 group p-6 sm:p-8 rounded-3xl bg-white border border-gray-200/50 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
                   <svg
@@ -540,6 +545,20 @@ const Dashboard = () => {
                   </table>
                 </div>
               </div>
+            </div> */}
+            <SparkLines/>
+            <div className="flex flex-col justify-center lg:flex-row gap-5 gap-y-5 my-5 lg:mx-12">
+            
+            <div className="p-5 flex flex-col md:flex-row items-center justify-center dark:bg-gray-800 rounded-3xl">
+            <PieChart/>
+            <div>
+            <RadialbarChart/>
+            <h4 className="text-xl font-semibold dark:text-slate-300 text-center">Growth This Month!</h4>
+            </div>
+            </div>
+            <div className="p-5 w-full hidden md:block dark:bg-gray-800 rounded-2xl">
+            <AreaChart/>
+            </div>
             </div>
           </div>
         </div>
